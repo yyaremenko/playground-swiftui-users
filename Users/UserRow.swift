@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserRow: View {
-    @State var user: User
+    var user: User
     
     var body: some View {
         HStack {

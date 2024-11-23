@@ -20,6 +20,7 @@ struct ContentView: View {
                     ForEach($data.users) { $user in
                         NavigationLink {
                             UserDetails(user: $user)
+                                .navigationTitle("Edit user")
                         } label: {
                             UserRow(user: user)
                         }

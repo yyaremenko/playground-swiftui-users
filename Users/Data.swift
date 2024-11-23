@@ -18,20 +18,13 @@ class Data: ObservableObject {
     ]
 }
 
-class User: Identifiable {
+struct User: Identifiable {
     let id: UUID = UUID()
     
     var firstName: String
     var lastName: String
     var age: Int
     var gender: Gender
-    
-    init(firstName: String, lastName: String, age: Int, gender: Gender) {
-        self.firstName = firstName
-        self.lastName = lastName
-        self.age = age
-        self.gender = gender
-    }
 }
 
 enum Gender: String, Codable {
